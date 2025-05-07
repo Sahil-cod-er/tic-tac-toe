@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   
+    <main>
+     
+      <div class="user" id="left">
+        <span class="heading"><h1>User-X</h1></span>
+        <span class="heading" id="timer-x"><h2></h2></span>
+
+        <div class="input" id="pieces-x">
+           
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-1"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-2"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-3"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-4"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-5"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-6"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-7"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-8"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="x.png"
+            alt="X-img"
+            id="X-9"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+        </div>
+        <div class="newgame"><button type="button" onclick="newgame()">Newgame</button></div>
+        <div class="popup-background" id="popup-background">
+            <div id="popup">
+
+            </div>
+        </div>
+      </div>
+      <div class="boxes" id="bigbox">
+        <div
+          id="box1"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <div
+          id="box2"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <div
+          id="box3"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <div
+          id="box4"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <div
+          id="box5"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <div
+          id="box6"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <div
+          id="box7"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <div
+          id="box8"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+        <div
+          id="box9"
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+      </div>
+      <div class="user" id="right">
+        <span class="heading"><h1>User-O</h1></span>
+        <span id="timer-o" class="heading"><h2></h2></span>
+        <div class="input" id="pieces-o">
+          <img
+            src="o.png"
+            alt="X-img"
+            id="O-1"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="o.png"
+            alt="X-img"
+            id="O-2"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="o.png"
+            alt="X-img"
+            id="O-3"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img src="o.png" alt="X-img" id=OX-4" draggable="true"
+          ondragstart="drag(event)" />
+          <img
+            src="o.png"
+            alt="X-img"
+            id="O-5"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="o.png"
+            alt="X-img"
+            id="O-6"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img
+            src="o.png"
+            alt="X-img"
+            id="O-7"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+          <img src="o.png" alt="X-img" id=OX-8" draggable="true"
+          ondragstart="drag(event)" />
+          <img
+            src="o.png"
+            alt="X-img"
+            id="O-9"
+            draggable="false"
+            ondragstart="drag(event)"
+          />
+        </div>
+      </div>
+    
+    </main>
+    <script async src="script.js"></script>
+    <script async src="timer-user.js"></script>
+    <script async src="logic.js"></script>
+    <!-- <script async src="claude.js"></script> -->
+  </body>
+</html>
